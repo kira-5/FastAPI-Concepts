@@ -30,19 +30,16 @@ To get started with FastAPI EnvManager, follow these installation steps:
    python -m venv .venv-envmanager
 
 4. Activate virtual environment:
-   1. Navigate to the virtual environment directory:
+   - Navigate to the virtual environment directory:
     ```shell
    cd .venv-envmanager
-
-2. For windows
-   1. ```shell
-   cd Scripts 
-
-2. ```shell
-activate
-
-   3. For Mac
-   ```shell
+   - For windows
+    ```shell
+   cd Scripts
+    ```shell
+   activate
+   - For Mac
+    ```shell
    source bin/activate
 
 5. Navigate to the backend directory:
@@ -66,7 +63,6 @@ activate
     - ### Development Environment
         ```shell
         APP_ENV=development uvicorn app.main:app
-
     - ### Production Environment
         ```shell
         APP_ENV=production uvicorn app.main:app
