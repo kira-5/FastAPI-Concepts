@@ -73,15 +73,48 @@ FastAPI EnvManager uses environment variables to configure the application. Belo
 
 - **APP_ENV**: Set this variable to either "development" or "production" to specify the active environment for your application.
 
-- Here's an example of how to set the environment variable for a development environment:
-    1. If want to define in .env
-        ```shell
-        export APP_ENV=development
-    2. If want to define in command
-        ```shell
-        APP_ENV=development uvicorn main:app
+### Setting `APP_ENV` Environment Variable
 
-Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. For example, set it to "development" for local development and testing, and "production" when deploying to a live production server.
+You can set the `APP_ENV` environment variable in two ways:
+
+1. **Using a .env File**:
+
+   To set the `APP_ENV` variable in a .env file, follow these steps:
+
+   - Create a `.env` file in your project directory if it doesn't already exist.
+   - Add the following line to the `.env` file for a development environment:
+     ```shell
+     APP_ENV=development
+     ```
+     or for a production environment:
+     ```shell
+     APP_ENV=production
+     ```
+
+2. **Using a Command**:
+
+   To set the `APP_ENV` variable via a command, use the following syntax:
+
+   - For a development environment:
+     ```shell
+     export APP_ENV=development
+     ```
+     or
+     ```shell
+     APP_ENV=development uvicorn main:app
+     ```
+
+   - For a production environment:
+     ```shell
+     export APP_ENV=production
+     ```
+     or
+     ```shell
+     APP_ENV=production uvicorn main:app
+     ```
+
+Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. Set it to "development" for local development and testing, and "production" when deploying to a live production server.
+
 
 
 ## License
