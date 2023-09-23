@@ -74,8 +74,12 @@ FastAPI EnvManager uses environment variables to configure the application. Belo
 - **APP_ENV**: Set this variable to either "development" or "production" to specify the active environment for your application.
 
 - Here's an example of how to set the environment variable for a development environment:
-    ```shell
-    export APP_ENV=development
+    1. If want to define in .env
+        ```shell
+        export APP_ENV=development
+    2. If want to define in command
+        ```shell
+        APP_ENV=development uvicorn main:app
 
 Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. For example, set it to "development" for local development and testing, and "production" when deploying to a live production server.
 
