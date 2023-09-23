@@ -1,0 +1,22 @@
+# pip list
+# pip freeze
+
+# pip install pip-tools
+
+# pip-compile requirements.in -o requirements.txt
+
+# pip install -r requirements.txt
+
+# Formatting
+black
+flake8
+python-dotenv
+pip-tools
+pytz
+
+
+# FastAPI
+fastapi 
+uvicorn 
+fastapi-limiter
+starlette
