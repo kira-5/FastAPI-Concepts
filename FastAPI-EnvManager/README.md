@@ -73,11 +73,11 @@ FastAPI EnvManager uses environment variables to configure the application. Belo
 
 - **APP_ENV**: Set this variable to either "development" or "production" to specify the active environment for your application.
 
-Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. For example, set it to "development" for local development and testing, and "production" when deploying to a live production server.
-
-Here's an example of how to set the environment variable for a development environment:
+- Here's an example of how to set the environment variable for a development environment:
     ```shell
     export APP_ENV=development
+
+Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. For example, set it to "development" for local development and testing, and "production" when deploying to a live production server.
 
 
 ## License
@@ -88,4 +88,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 - Thanks to the FastAPI community for their excellent documentation and contributions.
-- Special thanks to [Abhishek Singh].
+- Special thanks to Abhishek Singh.
