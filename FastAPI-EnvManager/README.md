@@ -101,7 +101,7 @@ You can set the `APP_ENV` environment variable in two ways:
      ```
      or
      ```shell
-     APP_ENV=development uvicorn main:app
+     APP_ENV=development uvicorn app.main:app
      ```
 
    - For a production environment:
@@ -110,7 +110,7 @@ You can set the `APP_ENV` environment variable in two ways:
      ```
      or
      ```shell
-     APP_ENV=production uvicorn main:app
+     APP_ENV=production uvicorn app.main:app
      ```
 
 Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. Set it to "development" for local development and testing, and "production" when deploying to a live production server.
