@@ -11,7 +11,7 @@ def get_app_config():
         # If not provided, check if it's defined in the .env file
 
         # Load environment variables from .env
-        load_dotenv()
+        load_dotenv(dotenv_path="config/.env")
         app_env = os.environ.get("APP_ENV", "development")
         # app_env = os.getenv("APP_ENV", "development")
         print(f"app_env_env: {app_env}")
