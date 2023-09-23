@@ -2,12 +2,15 @@
 
 FastAPI EnvManager is a Python web application built with FastAPI that helps manage different environments, including development and production. It provides a convenient way to switch between configurations and settings for various deployment scenarios.
 
+
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
+
 
 ## Installation
 
@@ -32,10 +35,10 @@ To get started with FastAPI EnvManager, follow these installation steps:
    - To start the FastAPI application, use the following commands depending on your environment:
     - ### Development Environment
         ```shell
-        APP_ENV=development uvicorn main:app --reload
+        APP_ENV=development uvicorn main:app
     - ### Production Environment
         ```shell
-        APP_ENV=production uvicorn main:app --reload
+        APP_ENV=production uvicorn main:app
 
 
 ## Usage
@@ -73,16 +76,16 @@ FastAPI EnvManager uses environment variables to configure the application. Belo
 Before running the FastAPI EnvManager application, ensure that you have the necessary environment variables correctly set according to your deployment needs. The value of `APP_ENV` determines which environment configuration the application will use. For example, set it to "development" for local development and testing, and "production" when deploying to a live production server.
 
 Here's an example of how to set the environment variable for a development environment:
-
-```shell
-export APP_ENV=development
+    ```shell
+    export APP_ENV=development
 
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+
 ## Acknowledgments
 
 - Thanks to the FastAPI community for their excellent documentation and contributions.
-- Special thanks to [Author Name] for [specific contributions or inspiration].
+- Special thanks to [Abhishek Singh].
